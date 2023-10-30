@@ -15,7 +15,7 @@ browser.get("https://www.linkedin.com")
 #É importante porque as vezes a internet demora para carregar
 time.sleep(2)
 #Fazendo o login no site do linkedin.
-browser.find_element_by_name("session_key").send_keys("hugoaraujob@gmail.com") #Email no linkedin
+browser.find_element_by_name("session_key").send_keys("<e-mail>") #Email no linkedin
 time.sleep(2)
 browser.find_element_by_name("session_password").send_keys("********") #Senha no linkedin
 time.sleep(2)
