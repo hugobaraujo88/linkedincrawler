@@ -12,6 +12,8 @@ A ferramenta não possui uma interface de usuário amigável pois a ideia era co
 
 Atualmente creio que o Linkedin colocou filtros de segurança de modo que não é possível, ou é extramamente difícil, fazer scrapping em suas páginas.
 
+Certamente hoje em dia, com mais conhecimentos sobre python e programação, eu faria inúmeras melhorias no código. No entanto, optei por deixar a versão original para demonstrar como agi e utilizei tecnologia no processo de solução de um problema real
+
 ## Instruções para usar o código
 
 Na época, redigi um conjunto de instruções para que outras pessoas pudessem utilizar o código, uma vez que eu havia deixado de trabalhar no fundo.
