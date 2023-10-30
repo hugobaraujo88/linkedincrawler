@@ -24,7 +24,7 @@ Certamente hoje em dia, com mais conhecimentos sobre python e programação, eu 
 
 ## Instruções para usar o código
 
-Na época, redigi um conjunto de instruções para que outras pessoas pudessem utilizar o código, uma vez que eu havia deixado de trabalhar no fundo.
+Na época, redigi um conjunto de instruções para que outras pessoas pudessem utilizar o código:
 
 1)	Na pasta projects do desktop que você criou, copie e cole o arquivo em excel Linkedin_Crawler.xlsx (que está no driver)
 2)	Baixe também o arquivo Linkedin_Crawler.py e coloque na mesma pasta do arquivo em excel.
