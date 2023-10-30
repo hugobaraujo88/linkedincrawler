@@ -12,7 +12,15 @@ A ferramenta não possui uma interface de usuário amigável pois a ideia era co
 
 Atualmente creio que o Linkedin colocou filtros de segurança de modo que não é possível, ou é extramamente difícil, fazer scrapping em suas páginas.
 
-Certamente hoje em dia, com mais conhecimentos sobre python e programação, eu faria inúmeras melhorias no código. No entanto, optei por deixar a versão original para demonstrar como agi e utilizei tecnologia no processo de solução de um problema real
+Certamente hoje em dia, com mais conhecimentos sobre python e programação, eu faria inúmeras melhorias no código. No entanto, optei por deixar a versão original para demonstrar como agi e utilizei tecnologia no processo de solução de um problema real:
+
+1- Entendimento do problema: precisávamos de mais leads proprietários para aumentar a probabilidade de aquisição.
+
+2- Entendimento dos dos dados: Onde estão os dados, em que formato (não estruturado, páginas da web)
+
+3- Preparação dos dados: dados são preparados para serem colocados em uma planilha de excel
+
+4- Avaliação e aplicação: executar o algoritmo para obter o resultado proposto e criação de documentação/instruções
 
 ## Instruções para usar o código
 
