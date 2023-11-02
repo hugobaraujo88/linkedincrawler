@@ -1,63 +1,61 @@
-# Project: Linkedin Crawler
+# Projeto: Linkedin Crawler
 
-## Context
+## Contexto
 
-This project was developed during my work at a Search Fund, a niche in the private equity sector. Search funds usually lack the resources to find companies available for acquisition in a proprietary way. Therefore, the search for "leads" (such as company owners or directors) was often done manually and non-systematically.
+Este projeto foi desenvolvido durante o meu trabalho em um Fundo de Busca (search fund), um nicho do setor de private equity. Os fundos de busca geralmente não possuem recursos para encontrar empresas disponíveis para a aquisição de forma proprietária. Sendo assim, a busca dos contatos dos "leads" (como proprietários ou diretores de empresas eram chamados) muitas vezes era feita de forma manual e não sistematizada.
 
-My idea was to create a way to systematize lead searching using a web scraping tool. This tool allowed for centralized contact searching on LinkedIn, systematization, and partial automation of the process. The result was a significant increase in productivity since I was able to obtain over 200 leads in just a few weeks, which would normally take months if done manually..
+Minha ideia foi, então, criar uma forma de sistematizar a busca dos leads usando uma ferramenta de web scraping. Essa ferramenta permitiu: a busca de contatos em uma plataforma centralizada, o LinkedIn, a sistematização e a automação parcial do processo. O resultado foi um ganho absurdo de produtividade, pois consegui mais de 200 leads em poucas semanas, o que normalmente levaria meses se feito manualmente.
 
 ## Observações
 
-The tool doesn't have a user-friendly interface because the goal was to put it into operation as quickly as possible. At the time, I was also learning to program in Python. However, the goal was achieved.
+A ferramenta não possui uma interface de usuário amigável pois a ideia era coloca-la em funcionamento o mais rápido possível e também estava aprendendo a programar em python. No entanto, o objetivo foi alcançado. 
 
-Currently, I believe that LinkedIn has implemented security filters, making it impossible or extremely difficult to scrape its pages.
+Atualmente creio que o Linkedin colocou filtros de segurança de modo que não é possível, ou é extramamente difícil, fazer scrapping em suas páginas.
 
-Certainly, had I known more about Python and programming, I would have made numerous improvements to the code. However, I chose to keep the original version to demonstrate how I used technology to solve a real problem:
+Certamente hoje em dia, com mais conhecimentos sobre python e programação, eu faria inúmeras melhorias no código. No entanto, optei por deixar a versão original para demonstrar como agi e utilizei tecnologia no processo de solução de um problema real:
 
-1. Problem Understanding: We needed more leads to increase the probability of acquisition.
+1- Entendimento do problema: precisávamos de mais leads proprietários para aumentar a probabilidade de aquisição.
 
-2. Data Understanding: Where is the data, in what format (unstructured, web pages)?
+2- Entendimento dos dos dados: Onde estão os dados, em que formato (não estruturado, páginas da web)
 
-3. Data Preparation: Preparing the data for entry into an Excel spreadsheet.
+3- Preparação dos dados: dados são preparados para serem colocados em uma planilha de excel
 
-4. Evaluation and Application: Executing the algorithm to obtain the intended result and creating documentation/instructions.
+4- Avaliação e aplicação: executar o algoritmo para obter o resultado proposto e criação de documentação/instruções
 
 ## Instruções para usar o código
 
-At the time, I wrote a set of instructions so that others could use the code:
+Na época, redigi um conjunto de instruções para que outras pessoas pudessem utilizar o código:
 
-1. In the "projects" folder on your desktop, copy and paste the Excel file "Linkedin_Crawler.xlsx" (which is on the driver).
-
-2. Download the "Linkedin_Crawler.py" file and place it in the same folder as the Excel file.
-
-3. Open Intellij IDEA and open the "Linkedin_Crawler.py" code.
-
-4. Edit the parts in green with your LinkedIn login and password as shown in the image below. Be careful not to remove the double quotes.
+1)	Na pasta projects do desktop que você criou, copie e cole o arquivo em excel Linkedin_Crawler.xlsx (que está no driver)
+2)	Baixe também o arquivo Linkedin_Crawler.py e coloque na mesma pasta do arquivo em excel.
+3)	Abra o IntellijIDEA e abra o código Linkedin_Crawler.py
+4)	Edite as partes em verde com seu login e senha do linkedin conforme a imagem abaixo. Atenção, não pode tirar as “”.
 
 ![UsuarioSenha](https://raw.githubusercontent.com/hugobaraujo88/linkedincrawler/main/img/UsuarioSenha.png)
 
-5)	After making these modifications, simply run the program.
+5)	Após fazer essas modificações é só rodar o programa.
 
-Attention:
+Atenção:
 
-•	The Excel file must be closed during program execution (if it's open, Intellij IDEA will indicate an error).
+•	O arquivo em excel deve estar fechado durante a rodagem do programa (se estiver aberto o IntellijIDEA vai indicar um erro);
 
-•	The Python program will write to the first sheet of the Excel file, so I suggest leaving it configured as is. After using it for the first search, copy and paste it into another sheet, and always keep the "List" sheet clear and at the top.
+•	O programa em python irá escrever na primeira aba do arquivo em excel, portanto sugiro sempre deixar configurado como está. Após usar numa primeira busca, copie e cole para outra aba e deixe sempre a aba “Lista” limpa e em primeiro;
 
 ![planilha](https://raw.githubusercontent.com/hugobaraujo88/linkedincrawler/main/img/planilha.png)
 
-•	The program works because I tested it several times, but LinkedIn can change its internal parameters at any time.
+•	O programa funciona pois testei várias vezes, mas o linkedin pode mudar seus parâmetros internos a qaulquer momento.
 
-•	If you want to change the search criteria for company partners/owners, simply modify line 172. The default is CEO OR DIRECTOR OR DIRECTRESS:
+•	Se você quiser alterar os critérios de busca para os sócios/proprietários da empresa basta alterar a linha 172. O padrão é CEO OU DIRETOR OU DIRETORA:
 
 ![url_emp](https://raw.githubusercontent.com/hugobaraujo88/linkedincrawler/main/img/url_emp.png)
 
-It needs to be changed after the "=" and before "&origin". For example, if you want to use "partner" instead of CEO, the line would be:
+Tem que ser alterado após o “=” e antes to “&origin”
+Por exemplo se você quiser, ao invés de CEO, colocar sócio, a linha ficaria
 
-'&keywords=(partner)%20OR%20(director)%20OR%20(directress)&origin=GLOBAL_SEARCH_HEADER'
+‘&keywords=(sócio)%20OR%20(diretor)%20OR%20(diretora)&origin=GLOBAL_SEARCH_HEADER’
 
-Until recently, LinkedIn allowed up to 15 items for searching! But recently, it changed to only 3, unfortunately. If you want to add more search criteria, it would look like this:
+Até pouco tempo atrás o linkedin permitia colocar até 15 itens para busca! Mas recentemente mudou para apenas 3, infelizmente. Ainda, se quiser adicionar mais um critério para busca ficaria assim:
 
-'&keywords=(partner) %20OR20%(CEO)%20OR%20(director)%20OR%20(directress)&origin=GLOBAL_SEARCH_HEADER'
+‘&keywords=(sócio) %20OR20%(CEO)%20OR%20(diretor)%20OR%20(diretora)&origin=GLOBAL_SEARCH_HEADER’
 
-(searching for partner OR CEO OR director OR directress, 4 criteria). Just enclose the criteria in parentheses and add the expression %20OR%20 after, concatenating the various criteria (if LinkedIn allows it again...).
+(buscando sócio OU CEO OU diretor OU diretora, 4 critérios). Basta colocar o critério entre parenteses e colocar a expressão %20OR%20 em seguida, concatenado os vários critérios (caso o linkedin volte a permitir...)
